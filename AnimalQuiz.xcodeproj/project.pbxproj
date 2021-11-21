@@ -13,6 +13,10 @@
 		6343E87C274A377300C76C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6343E87A274A377300C76C09 /* Main.storyboard */; };
 		6343E87E274A377300C76C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6343E87D274A377300C76C09 /* Assets.xcassets */; };
 		6343E881274A377300C76C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6343E87F274A377300C76C09 /* LaunchScreen.storyboard */; };
+		6343E88D274A4FFC00C76C09 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6343E88C274A4FFC00C76C09 /* QuestionViewController.swift */; };
+		6343E88F274A714B00C76C09 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6343E88E274A714B00C76C09 /* ResultViewController.swift */; };
+		6343E891274A83F200C76C09 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6343E890274A83F200C76C09 /* Question.swift */; };
+		6343E893274A83FE00C76C09 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6343E892274A83FE00C76C09 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6343E87D274A377300C76C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6343E880274A377300C76C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6343E882274A377300C76C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6343E88C274A4FFC00C76C09 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		6343E88E274A714B00C76C09 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		6343E890274A83F200C76C09 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		6343E892274A83FE00C76C09 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		6343E873274A377300C76C09 /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				6343E874274A377300C76C09 /* AppDelegate.swift */,
-				6343E876274A377300C76C09 /* SceneDelegate.swift */,
-				6343E878274A377300C76C09 /* ViewController.swift */,
-				6343E87A274A377300C76C09 /* Main.storyboard */,
+				6343E88B274A470100C76C09 /* Models */,
+				6343E88A274A46B400C76C09 /* ViewControllers */,
+				6343E888274A452200C76C09 /* StoryBoards */,
 				6343E87D274A377300C76C09 /* Assets.xcassets */,
-				6343E87F274A377300C76C09 /* LaunchScreen.storyboard */,
-				6343E882274A377300C76C09 /* Info.plist */,
+				6343E889274A463400C76C09 /* SupportingFiles */,
 			);
 			path = AnimalQuiz;
+			sourceTree = "<group>";
+		};
+		6343E888274A452200C76C09 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				6343E87A274A377300C76C09 /* Main.storyboard */,
+				6343E87F274A377300C76C09 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		6343E889274A463400C76C09 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6343E874274A377300C76C09 /* AppDelegate.swift */,
+				6343E876274A377300C76C09 /* SceneDelegate.swift */,
+				6343E882274A377300C76C09 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6343E88A274A46B400C76C09 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6343E878274A377300C76C09 /* ViewController.swift */,
+				6343E88C274A4FFC00C76C09 /* QuestionViewController.swift */,
+				6343E88E274A714B00C76C09 /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6343E88B274A470100C76C09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6343E890274A83F200C76C09 /* Question.swift */,
+				6343E892274A83FE00C76C09 /* Answer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6343E88F274A714B00C76C09 /* ResultViewController.swift in Sources */,
 				6343E879274A377300C76C09 /* ViewController.swift in Sources */,
 				6343E875274A377300C76C09 /* AppDelegate.swift in Sources */,
+				6343E893274A83FE00C76C09 /* Answer.swift in Sources */,
+				6343E891274A83F200C76C09 /* Question.swift in Sources */,
+				6343E88D274A4FFC00C76C09 /* QuestionViewController.swift in Sources */,
 				6343E877274A377300C76C09 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,10 +339,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YZD7BZY478;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = AnimalQuiz/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +368,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YZD7BZY478;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = AnimalQuiz/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
